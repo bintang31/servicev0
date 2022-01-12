@@ -1,0 +1,130 @@
+{
+	"port": "1123",
+	"jwtSign": "secret",
+	"database": {
+		"mysql": {
+			"driver": "mysql",
+			"host": "localhost",
+			"user": "username",
+			"password": "password",
+			"db_name": "mobileloket",
+			"port": 3306,
+			"pool": {
+				"maxOpenConns": 100,
+				"maxIdleConns": 10,
+				"maxLifetime": 300
+			}
+		},
+		"postgres": {
+			"driver": "postgres",
+			"host": "localhost",
+			"user": "userserve",
+			"password": "password",
+			"db_name": "serve01",
+			"port": 5432,
+			"pool": {
+				"maxOpenConns": 100,
+				"maxIdleConns": 10,
+				"maxLifetime": 300
+			}
+		},
+		"merangin": {
+			"driver": "mysql",
+			"host": "117.103.66.202",
+			"user": "bimasakti",
+			"password": "bimasaktisanjaya2017",
+			"db_name": "kabmerangin_loket_testing",
+			"port": 3306,
+			"pool": {
+				"maxOpenConns": 100,
+				"maxIdleConns": 10,
+				"maxLifetime": 300
+			}
+		},
+		"BLU": {
+			"driver": "mysql",
+			"host": "103.135.24.11",
+			"user": "bimasakti",
+			"password": "bimasaktisanjaya2017",
+			"db_name": "kabmerangin_loket_testing",
+			"port": 3309,
+			"pool": {
+				"maxOpenConns": 100,
+				"maxIdleConns": 10,
+				"maxLifetime": 300
+			}
+		},
+		"amqp": {
+			"host": "localhost",
+			"port": 5672,
+			"user": "atlas",
+			"password": "Ikancucut182",
+			"reconnect_retry": 10,
+			"reconnect_interval": 5,
+			"queue_name": "atlas-process",
+			"debug": true,
+			"consumer_limit": 200,
+			"worker_limit": 500
+		},
+		"worker_collection": {
+			"host": "localhost",
+			"port": 5672,
+			"user": "atlas",
+			"password": "Ikancucut182",
+			"reconnect_retry": 10,
+			"reconnect_interval": 5,
+			"queue_name": "atlas-collection",
+			"debug": true,
+			"consumer_limit": 200,
+			"worker_limit": 500
+		},
+		"redis": {
+			"host": "34.101.240.154",
+			"port": 6379,
+			"password": ""
+		}
+	},
+	"moduleloket": {
+		"endpoint": "http://etherwebservicev2-dev.limasakti.co.id:7033/",
+		"user": "mobileloket",
+		"password": "Mobile.Loket.Lite.2020",
+		"userloket": "MOBILELOKET"
+	},
+	"gis": {
+		"endpoint": "https://pvc-backend.sumpahpalapa.com/push/",
+		"user": "WTNma67dDdva?fmp",
+		"password": "yEAWUZ-76r#fBN47"
+	},
+	"gis_prod": {
+		"endpoint": "https://gis-backend.pdampintar.id/push/",
+		"user": "9dc9GdY5%5u@VcV-",
+		"password": "Kvw2yp6?S*zWQtqn"
+	},
+	"fractura": {
+		"BillerApiKey": "sibs",
+		"BillerApiSecret": "m2rd14PVtsWoqLBmpdewcXGzFbIbq5ab"
+	},
+	"shopee_pay": {
+		"secret": "ei5b6z2f4o4Kby5E7Ci13NffjI1mjywt",
+		"client_id": "Bima Sakti Alterra",
+		"store_ext_id": "BSASHOPEEWEBTEST",
+		"merchant_ext_id": "BSASHOPEEWEB",
+		"currency": "IDR",
+		"terminal_id": "A1",
+		"qr_validity_period" : 1000,
+		"qr_directory" : "/mobileloket-backend/qr_payment/",
+		"host": "https://api.uat.wallet.airpay.co.id:443"
+	  },
+	"cronjob": {
+		"daily": "2 * * * * *"
+	},
+	"livy": {
+		"endpoint": "http://localhost:8998/"
+	},
+	"logdir": "log",
+	"dir.local": "/Users/andhikarestama/Documents/go/src/mobileloket-backend/images/",
+	"url.local": "http://localhost:1123/v1/api/images/",
+	"log_identifier": "mobileloket",
+	"log_max_age": 15,
+	"debug": true
+}
